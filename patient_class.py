@@ -34,7 +34,7 @@ class Patient:
   def readPatientsFile(self):
     # Opens the patients file and stores it into a patient list
     patient_list = []
-    patients_obj = open("Final_Project\patients.txt", "r")
+    patients_obj = open("patients.txt", "r")
     
     for patients in patients_obj:
       patient_text = patients.strip().split("_")
@@ -89,7 +89,7 @@ class Patient:
   
   def writeListOfPatientsToFile(self, format_patient):
     # Writes the edited or new patient to the original file
-    patients_obj_write = open("Final_Project\patients.txt", 'w')
+    patients_obj_write = open("patients.txt", 'w')
     patients_obj_write.write(format_patient)
     patients_obj_write.close()
     
